@@ -1,0 +1,21 @@
+.dash{
+    background-color: #ffffff;
+    margin-left: 50px;
+}
+
+.percent-sequenc{
+    background-color: #7a38d0;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+    box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.3);
+}
+
+.list-dash li:last-child{
+    border: none;
+}
+
+.list-dash li{
+    border-right: 1px solid #333333;
+    padding-right: 3%;
+}

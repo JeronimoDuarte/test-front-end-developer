@@ -1,0 +1,22 @@
+#top-header{
+    -webkit-box-shadow: -1px 14px 5px -12px rgba(117,115,117,1);
+    -moz-box-shadow: -1px 14px 5px -12px rgba(117,115,117,1);
+    box-shadow: -1px 14px 5px -12px rgba(117,115,117,1); 
+    padding-left: 45px;   
+    background-color: #ffffff;
+}
+
+#top-header .nav li{
+    padding: 30px 50px 0 0;
+}
+
+#top-header .nav li:nth-child(2) i{
+    transform: scaleX(-1)
+}
+.top-perfil{
+    padding-top: 20px;
+}
+
+#foto{
+    padding-right: 0;
+}
