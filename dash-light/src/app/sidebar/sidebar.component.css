@@ -21,7 +21,7 @@
     border: none;
 }
 
-.submenu li{
+.submenu{
     border-left: 3px solid dashed #000000 !important;
     position: relative;
     height: auto;

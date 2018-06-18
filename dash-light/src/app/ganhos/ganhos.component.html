@@ -6,34 +6,34 @@
   <div class="col-4 margin-descricao">
     Código do Cliente: EGRH Y45hY D2GHY 56vh
   </div>
-  <div class="col-md-4  col-xs-12 col-sm-6 text-value text-left">
+  <div class="col-md-2  col-xs-12 col-sm-6 text-value text-left">
     <span>Para o dia atual</span>
     <span class="valor text-success">
-      R$ 2.652.07
+      R$ {{ valueCards.currentDay }}
     </span>
   </div>
   <div class="col-md-2 col-xs-12 col-sm-6 text-value text-right">
-      <span >Para o dia atual</span>
+      <span >Para o mês atual</span>
       <span class="valor">
-        R$ 2.652.07
+          R$ {{ valueCards.currentMonth }}
       </span>
   </div>
-  <div class="col-md-2  col-xs-12 col-sm-6 text-value text-right">
+  <div class="col-md-3  col-xs-12 col-sm-6 text-value text-right">
       <span>Durante o dia anterior</span>
       <span class="valor">
-        R$ 2.652.07
+          R$ {{ valueCards.lastDay }}
       </span>    
   </div>
-  <div class="col-md-2 col-xs-12 col-sm-6 text-value text-right">
-      <span>Para o mês atual</span>
+  <div class="col-md-3 col-xs-12 col-sm-6 text-value text-right">
+      <span>Durante o mês anterior</span>
       <span class="valor">
-        R$ 2.652.07
+          R$ {{ valueCards.lastMonth }}
       </span>
   </div>
   <div class="col-md-2 col-xs-12 col-sm-6 text-value text-right">
-      <span >Mês Passado</span>
+      <span >Total</span>
       <span class="valor">
-        R$ 2.652.07
+          R$ {{ valueCards.total }}
       </span>    
   </div>
 </div>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AppLightService } from '../app-light.service';
 
 @Component({
   selector: 'app-ganhos',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GanhosComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private appService: AppLightService) { }
+  valueCards = new Object
   ngOnInit() {
+
+    this.getData()
+  }
+
+  getData(){
+    this.appService.getCard().subscribe(
+      res => {
+        this.valueCards = res
+      }
+    )
   }
 
 }

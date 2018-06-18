@@ -13,6 +13,36 @@
       <li class="list-inline-item">
         <i class="fa fa-file-excel-o"></i> Exportar para Excel CSV
       </li>
+      <li class="list-inline-item">
+          X
+      </li>
     </ul>
+  </div>
+</div>
+<div class="row dash">
+
+  <div class="col-md-9 col-xs-12 col-sm-12 col-lg-12">
+    <div class="row">
+      <div class="col-12">
+        <ul class="list-inline" id="legendTopChar">
+          <li class="list-inline-item">Quantidade</li>
+          <li class="list-inline-item">
+            <span class="circle-color-item"></span> shoping.com           
+          </li>
+          <li class="list-inline-item">
+              <span class="circle-color-item"></span> storemarketi.com
+          </li>
+        </ul>
+      </div>
+    </div>
+    <strong class="title-legend pull-right">Duração</strong>
+    <div id="chartjs" *ngIf="this.valuesDataLine.lenght > 0; else aguardando">   
+        <chart [type]="line" [data]="dataLine" [options]="optionsLine"></chart>
+    </div>
+    <ng-template #aguardando>
+      <div class="alert alert-info">
+        <i class="fa fa-spinner"></i> Aguardando carregamento dos dados.
+      </div>
+    </ng-template>
   </div>
 </div>
